@@ -1,126 +1,0 @@
-[phmlc_bridge] phm_framework import failed (ImportError: Traceback (most recent call last):
-  File "C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\tensorflow\python\pywrap_tensorflow.py", line 70, in <module>
-    from tensorflow.python._pywrap_tensorflow_internal import *
-ImportError: DLL load failed while importing _pywrap_tensorflow_internal: Error en una rutina de inicialización de biblioteca de vínculos dinámicos (DLL).
-
-
-Failed to load the native TensorFlow runtime.
-See https://www.tensorflow.org/install/errors for some common causes and solutions.
-If you need help, create an issue at https://github.com/tensorflow/tensorflow/issues and include the entire stack trace above this error message.); using phmd-only load_curves replica.
-Remember to cite the original publisher dataset:
-	@article{solis2025model,
-	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
-	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
-	  journal={Mathematics},
-	  volume={13},
-	  number={4},
-	  pages={555},
-	  year={2025},
-	  publisher={Multidisciplinary Digital Publishing Institute}
-	}
-	
-You can download the dataset manually from:  
-
-** If you find this tool useful, please cite our SoftwareX paper: 
-	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
-
-INFO:root:Read in 1.0814094543457031 seconds
-Remember to cite the original publisher dataset:
-	@article{solis2025model,
-	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
-	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
-	  journal={Mathematics},
-	  volume={13},
-	  number={4},
-	  pages={555},
-	  year={2025},
-	  publisher={Multidisciplinary Digital Publishing Institute}
-	}
-	
-You can download the dataset manually from:  
-
-** If you find this tool useful, please cite our SoftwareX paper: 
-	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
-
-Reading dataset:   0%|          | 0/241 [00:00<?, ?it/s]Reading data:   0%|          | 0/241 [00:00<?, ?it/s]   Reading data:   9%|8         | 21/241 [00:00<00:01, 203.89it/s]Reading data:  17%|#7        | 42/241 [00:00<00:01, 168.32it/s]Reading data:  26%|##5       | 62/241 [00:00<00:00, 180.56it/s]Reading data:  34%|###4      | 83/241 [00:00<00:00, 188.54it/s]Reading data:  43%|####2     | 103/241 [00:00<00:00, 187.96it/s]Reading data:  51%|#####     | 122/241 [00:00<00:00, 176.70it/s]Reading data:  59%|#####8    | 141/241 [00:00<00:00, 179.62it/s]Reading data:  66%|######6   | 160/241 [00:00<00:00, 169.07it/s]Reading data:  75%|#######4  | 180/241 [00:01<00:00, 177.33it/s]Reading data:  82%|########2 | 198/241 [00:01<00:00, 169.33it/s]Reading data:  90%|########9 | 216/241 [00:01<00:00, 168.43it/s]Reading data:  99%|#########8| 238/241 [00:01<00:00, 181.31it/s]Reading data: 100%|##########| 241/241 [00:01<00:00, 131.36it/s]
-INFO:root:Read in 3.4640424251556396 seconds
-[compare] 10 experiments: ['HSF15_cooler_fcn', 'MOSFET11_rul_fcn', 'MPM20_fault_fcn', 'OBDD17_rul_fcn', 'PHM18_fault_fcn', 'PHMAP23_fault_fcn', 'PHME20_rul_fcn', 'PRONOSTIA_rul_fcn', 'RRB23_rul_fcn', 'UPM20_fault_fcn']
-[compare] model=gemma3:12b level=L2 variants=['conservative', 'neutral', 'aggressive'] baselines=['random', 'last-seen', 'arima', 'early-stopping', 'oracle'] seeds=[0, 1, 2]
-[compare] model probe ok (0.9s)
-  done llm:conservative:gemma3:12b:L2
-  done llm:neutral:gemma3:12b:L2
-  done llm:aggressive:gemma3:12b:L2
-  done random
-  done last-seen
-  done arima
-  done early-stopping
-  done oracle
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-
-=== prompt-variant comparison ===
-                        policy  n  regret_mean  regret_ci95  saved_pct_A_mean  saved_pct_B_mean  false_prune_rate  false_continue_rate  found_best_rate  prune_rate
-                         arima 30     0.032704     0.018338          0.423701          0.423701          0.089560             0.440123         0.466667    0.502778
-                early-stopping 30     0.124178     0.065295          0.100216          0.100216          0.027267             0.634034         0.333333    0.677778
-                     last-seen 30     0.012419     0.012275          0.408068          0.408068          0.048548             0.440267         0.700000    0.491667
-  llm:aggressive:gemma3:12b:L2 30     0.147625     0.067009          0.611976          0.608976          0.415751             0.005495         0.233333    0.750000
-llm:conservative:gemma3:12b:L2 30     0.008096     0.009360          0.165687          0.164798          0.013844             0.638844         0.766667    0.227778
-     llm:neutral:gemma3:12b:L2 30     0.050982     0.035546          0.291292          0.288840          0.058392             0.567998         0.433333    0.605556
-                        oracle 30     0.000000     0.000000          0.476784          0.476784          0.113811             0.142583         1.000000    0.630556
-                        random 30     0.076633     0.050086          0.317688          0.317688          0.031627             0.650228         0.400000    0.386111
-
-results in results\runs\v6_prompt_compare/ (compare_*.csv, prompts/, raw/compare_decisions.csv)

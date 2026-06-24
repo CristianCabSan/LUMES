@@ -1,105 +1,0 @@
-[10:56:43] loading data (debug=False)...
-[phmlc_bridge] phm_framework import failed (ImportError: Traceback (most recent call last):
-  File "C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\tensorflow\python\pywrap_tensorflow.py", line 70, in <module>
-    from tensorflow.python._pywrap_tensorflow_internal import *
-ImportError: DLL load failed while importing _pywrap_tensorflow_internal: Error en una rutina de inicialización de biblioteca de vínculos dinámicos (DLL).
-
-
-Failed to load the native TensorFlow runtime.
-See https://www.tensorflow.org/install/errors for some common causes and solutions.
-If you need help, create an issue at https://github.com/tensorflow/tensorflow/issues and include the entire stack trace above this error message.); using phmd-only load_curves replica.
-Remember to cite the original publisher dataset:
-	@article{solis2025model,
-	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
-	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
-	  journal={Mathematics},
-	  volume={13},
-	  number={4},
-	  pages={555},
-	  year={2025},
-	  publisher={Multidisciplinary Digital Publishing Institute}
-	}
-	
-You can download the dataset manually from:  
-
-** If you find this tool useful, please cite our SoftwareX paper: 
-	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
-
-INFO:root:Read in 1.1097936630249023 seconds
-Remember to cite the original publisher dataset:
-	@article{solis2025model,
-	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
-	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
-	  journal={Mathematics},
-	  volume={13},
-	  number={4},
-	  pages={555},
-	  year={2025},
-	  publisher={Multidisciplinary Digital Publishing Institute}
-	}
-	
-You can download the dataset manually from:  
-
-** If you find this tool useful, please cite our SoftwareX paper: 
-	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
-
-Reading dataset:   0%|          | 0/241 [00:00<?, ?it/s]Reading data:   0%|          | 0/241 [00:00<?, ?it/s]   Reading data:   9%|8         | 21/241 [00:00<00:01, 196.41it/s]Reading data:  17%|#7        | 41/241 [00:00<00:01, 178.02it/s]Reading data:  26%|##5       | 62/241 [00:00<00:01, 178.18it/s]Reading data:  35%|###4      | 84/241 [00:00<00:00, 184.52it/s]Reading data:  44%|####3     | 106/241 [00:00<00:00, 186.58it/s]Reading data:  52%|#####1    | 125/241 [00:00<00:00, 168.66it/s]Reading data:  60%|######    | 145/241 [00:00<00:00, 169.68it/s]Reading data:  68%|######7   | 163/241 [00:00<00:00, 164.52it/s]Reading data:  76%|#######5  | 183/241 [00:01<00:00, 168.08it/s]Reading data:  83%|########2 | 200/241 [00:01<00:00, 161.51it/s]Reading data:  90%|######### | 217/241 [00:01<00:00, 163.42it/s]Reading data: 100%|##########| 241/241 [00:01<00:00, 180.17it/s]Reading data: 100%|##########| 241/241 [00:01<00:00, 130.85it/s]
-INFO:root:Read in 3.2402725219726562 seconds
-[11:01:42] loaded 4 experiment(s): ['HSF15_cooler_fcn', 'HSF15_cooler_mscnn', 'HSF15_cooler_rnn', 'HSF15_cooler_transformer']
-[exp1] skipped; using provided best = gemma3:12b / L2
-
-===== [11:01:42] EXP2: best LLM vs baselines + oracle =====
-  done llm:gemma3:12b:L2 (2980s)
-  done random
-  done last-seen
-  done arima
-  done oracle
-  dumped 9702 decisions -> results\raw\exp2_decisions.csv
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
-  warnings.warn("Exact p-value calculation does not work if there are "
-C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3428: UserWarning: Sample size too small for normal approximation.
-  warnings.warn("Sample size too small for normal approximation.")
-           policy  regret_mean  saved_pct_A_mean  saved_pct_B_mean  false_prune_rate  false_continue_rate  found_best_rate  prune_rate
-            arima     0.012715          0.512324          0.512324          0.111511             0.122302            0.375    0.687500
-        last-seen     0.008339          0.478589          0.478589          0.032581             0.102757            0.750    0.635417
-llm:gemma3:12b:L2     0.132779          0.595861          0.594073          0.324138             0.000000            0.250    0.750000
-           oracle     0.000000          0.462556          0.462556          0.040000             0.076190            1.000    0.604167
-           random     0.018123          0.354679          0.354679          0.019399             0.584869            0.500    0.406250
-
-===== [11:57:55] EXP3: determinism of the best LLM =====
-  dumped 640 votes -> results\raw\exp3_votes.csv
-  mean confidence=1.000 deterministic=100.0% (n=80)
-  wrote results\figs\regret_box.png
-  wrote results\figs\savings_AB.png
-  wrote results\figs\fc_fp_rates.png
-  wrote results\figs\confidence_hist.png
-
-[12:08:06] ALL DONE. CSVs + figures in results/
-ate  prune_rate
-            arima     0.012715          0.512324          0.512324          0.111511             0.122302            0.375    0.687500
-        last-seen     0.008339          0.478589          0.478589          0.032581             0.102757            0.750    0.635417
-llm:gemma3:12b:L2     0.132779          0.595861          0.594268          0.324138             0.000000            0.250    0.750000
-           oracle     0.000000          0.462556          0.462556          0.040000             0.076190            1.000    0.604167
-           random     0.018123          0.354679          0.354679          0.019399             0.584869            0.500    0.406250
-
-===== [11:57:53] EXP3: determinism of the best LLM =====
-  dumped 640 votes -> results\raw\exp3_votes.csv
-  mean confidence=1.000 deterministic=100.0% (n=80)
-  wrote results\figs\regret_box.png
-  wrote results\figs\savings_AB.png
-  wrote results\figs\fc_fp_rates.png
-  wrote results\figs\confidence_hist.png
-
-[12:08:04] ALL DONE. CSVs + figures in results/
