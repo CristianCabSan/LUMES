@@ -1,4 +1,4 @@
-# LUMES: An LLM-UnderpinnedMethod for Early Stopping toAccelerate Bayesian Optimization inPredictive Maintenance
+# LUMES: An LLM-Underpinned Method for Early Stopping toAccelerate Bayesian Optimization inPredictive Maintenance
 
 TFM project. An **LLM acts as an early-stopping judge** for Bayesian optimization
 (BO) over **pre-computed learning curves** from the `CURVES` meta-dataset (consumed
