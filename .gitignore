@@ -9,3 +9,4 @@ __pycache__/
 results/*.log
 results/raw/
 results/_*.csv
+results/runs
