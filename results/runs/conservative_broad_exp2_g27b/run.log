@@ -1,0 +1,212 @@
+[phmlc_bridge] using cached curves_split -> C:\Users\Cristian\.cache\llm_es\curves_split_1bd3efd79ca3fc8e.pkl
+[phmlc_bridge] using cached results -> C:\Users\Cristian\.cache\llm_es\results_34c3489662a33b40.pkl
+[compare] 10 experiments: ['HSF15_cooler_fcn', 'MOSFET11_rul_fcn', 'MPM20_fault_fcn', 'OBDD17_rul_fcn', 'PHM18_fault_fcn', 'PHMAP23_fault_fcn', 'PHME20_rul_fcn', 'PRONOSTIA_rul_fcn', 'RRB23_rul_fcn', 'UPM20_fault_fcn']
+[compare] model=gemma3:27b level=L2 variants=['conservative'] baselines=['random', 'last-seen', 'arima', 'early-stopping', 'oracle'] seeds=[0, 1, 2]
+[compare] model probe ok (1.5s)
+     [llm:conservative:gemma3:27b:L2] 1/30 HSF15_cooler_fcn seed0: regret=0.000 savedB=0.548 prune=8/12
+     [llm:conservative:gemma3:27b:L2] 2/30 HSF15_cooler_fcn seed1: regret=0.015 savedB=0.587 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 3/30 HSF15_cooler_fcn seed2: regret=0.057 savedB=0.335 prune=7/12
+     [llm:conservative:gemma3:27b:L2] 4/30 MOSFET11_rul_fcn seed0: regret=0.000 savedB=0.240 prune=6/12
+     [llm:conservative:gemma3:27b:L2] 5/30 MOSFET11_rul_fcn seed1: regret=0.332 savedB=0.108 prune=4/12
+     [llm:conservative:gemma3:27b:L2] 6/30 MOSFET11_rul_fcn seed2: regret=0.143 savedB=0.095 prune=6/12
+     [llm:conservative:gemma3:27b:L2] 7/30 MPM20_fault_fcn seed0: regret=0.426 savedB=0.080 prune=3/12
+     [llm:conservative:gemma3:27b:L2] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.420 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 9/30 MPM20_fault_fcn seed2: regret=0.150 savedB=0.053 prune=2/12
+     [llm:conservative:gemma3:27b:L2] 10/30 OBDD17_rul_fcn seed0: regret=0.019 savedB=0.620 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 11/30 OBDD17_rul_fcn seed1: regret=0.024 savedB=0.467 prune=8/12
+     [llm:conservative:gemma3:27b:L2] 12/30 OBDD17_rul_fcn seed2: regret=0.034 savedB=0.571 prune=7/12
+     [llm:conservative:gemma3:27b:L2] 13/30 PHM18_fault_fcn seed0: regret=0.061 savedB=0.115 prune=5/12
+     [llm:conservative:gemma3:27b:L2] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.262 prune=7/12
+     [llm:conservative:gemma3:27b:L2] 15/30 PHM18_fault_fcn seed2: regret=0.000 savedB=0.278 prune=6/12
+     [llm:conservative:gemma3:27b:L2] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.465 prune=7/12
+     [llm:conservative:gemma3:27b:L2] 17/30 PHMAP23_fault_fcn seed1: regret=0.000 savedB=0.199 prune=5/12
+     [llm:conservative:gemma3:27b:L2] 18/30 PHMAP23_fault_fcn seed2: regret=0.475 savedB=0.092 prune=2/12
+     [llm:conservative:gemma3:27b:L2] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.672 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 20/30 PHME20_rul_fcn seed1: regret=0.000 savedB=0.476 prune=8/12
+     [llm:conservative:gemma3:27b:L2] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.690 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.420 savedB=0.338 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.458 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.156 savedB=0.481 prune=8/12
+     [llm:conservative:gemma3:27b:L2] 25/30 RRB23_rul_fcn seed0: regret=0.301 savedB=0.212 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.458 prune=6/12
+     [llm:conservative:gemma3:27b:L2] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.376 prune=6/12
+     [llm:conservative:gemma3:27b:L2] 28/30 UPM20_fault_fcn seed0: regret=0.631 savedB=0.251 prune=7/12
+     [llm:conservative:gemma3:27b:L2] 29/30 UPM20_fault_fcn seed1: regret=0.016 savedB=0.716 prune=9/12
+     [llm:conservative:gemma3:27b:L2] 30/30 UPM20_fault_fcn seed2: regret=0.016 savedB=0.735 prune=9/12
+  done llm:conservative:gemma3:27b:L2
+     [random] 1/30 HSF15_cooler_fcn seed0: regret=0.014 savedB=0.434 prune=6/12
+     [random] 2/30 HSF15_cooler_fcn seed1: regret=0.010 savedB=0.387 prune=4/12
+     [random] 3/30 HSF15_cooler_fcn seed2: regret=0.013 savedB=0.195 prune=3/12
+     [random] 4/30 MOSFET11_rul_fcn seed0: regret=0.044 savedB=0.408 prune=7/12
+     [random] 5/30 MOSFET11_rul_fcn seed1: regret=0.044 savedB=0.339 prune=5/12
+     [random] 6/30 MOSFET11_rul_fcn seed2: regret=0.143 savedB=0.166 prune=3/12
+     [random] 7/30 MPM20_fault_fcn seed0: regret=0.426 savedB=0.502 prune=6/12
+     [random] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.285 prune=5/12
+     [random] 9/30 MPM20_fault_fcn seed2: regret=0.000 savedB=0.246 prune=3/12
+     [random] 10/30 OBDD17_rul_fcn seed0: regret=0.006 savedB=0.476 prune=6/12
+     [random] 11/30 OBDD17_rul_fcn seed1: regret=0.024 savedB=0.381 prune=5/12
+     [random] 12/30 OBDD17_rul_fcn seed2: regret=0.000 savedB=0.251 prune=3/12
+     [random] 13/30 PHM18_fault_fcn seed0: regret=0.092 savedB=0.445 prune=6/12
+     [random] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.357 prune=5/12
+     [random] 15/30 PHM18_fault_fcn seed2: regret=0.191 savedB=0.298 prune=3/12
+     [random] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.326 prune=6/12
+     [random] 17/30 PHMAP23_fault_fcn seed1: regret=0.122 savedB=0.311 prune=4/12
+     [random] 18/30 PHMAP23_fault_fcn seed2: regret=0.205 savedB=0.134 prune=3/12
+     [random] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.481 prune=7/12
+     [random] 20/30 PHME20_rul_fcn seed1: regret=0.000 savedB=0.407 prune=5/12
+     [random] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.133 prune=3/12
+     [random] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.357 savedB=0.458 prune=7/12
+     [random] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.124 prune=4/12
+     [random] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.000 savedB=0.311 prune=3/12
+     [random] 25/30 RRB23_rul_fcn seed0: regret=0.038 savedB=0.236 prune=5/12
+     [random] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.216 prune=5/12
+     [random] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.091 prune=3/12
+     [random] 28/30 UPM20_fault_fcn seed0: regret=0.554 savedB=0.350 prune=5/12
+     [random] 29/30 UPM20_fault_fcn seed1: regret=0.016 savedB=0.575 prune=5/12
+     [random] 30/30 UPM20_fault_fcn seed2: regret=0.000 savedB=0.207 prune=4/12
+  done random
+     [last-seen] 1/30 HSF15_cooler_fcn seed0: regret=0.000 savedB=0.549 prune=8/12
+     [last-seen] 2/30 HSF15_cooler_fcn seed1: regret=0.015 savedB=0.606 prune=9/12
+     [last-seen] 3/30 HSF15_cooler_fcn seed2: regret=0.000 savedB=0.364 prune=7/12
+     [last-seen] 4/30 MOSFET11_rul_fcn seed0: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 5/30 MOSFET11_rul_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 6/30 MOSFET11_rul_fcn seed2: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 7/30 MPM20_fault_fcn seed0: regret=0.138 savedB=0.496 prune=6/12
+     [last-seen] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.441 prune=9/12
+     [last-seen] 9/30 MPM20_fault_fcn seed2: regret=0.000 savedB=0.060 prune=1/12
+     [last-seen] 10/30 OBDD17_rul_fcn seed0: regret=0.019 savedB=0.624 prune=9/12
+     [last-seen] 11/30 OBDD17_rul_fcn seed1: regret=0.024 savedB=0.622 prune=9/12
+     [last-seen] 12/30 OBDD17_rul_fcn seed2: regret=0.000 savedB=0.694 prune=8/12
+     [last-seen] 13/30 PHM18_fault_fcn seed0: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 15/30 PHM18_fault_fcn seed2: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.502 prune=7/12
+     [last-seen] 17/30 PHMAP23_fault_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [last-seen] 18/30 PHMAP23_fault_fcn seed2: regret=0.000 savedB=0.306 prune=4/12
+     [last-seen] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.676 prune=9/12
+     [last-seen] 20/30 PHME20_rul_fcn seed1: regret=0.000 savedB=0.620 prune=8/12
+     [last-seen] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.695 prune=9/12
+     [last-seen] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.000 savedB=0.423 prune=7/12
+     [last-seen] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.466 prune=9/12
+     [last-seen] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.000 savedB=0.630 prune=8/12
+     [last-seen] 25/30 RRB23_rul_fcn seed0: regret=0.011 savedB=0.457 prune=7/12
+     [last-seen] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.616 prune=9/12
+     [last-seen] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.535 prune=9/12
+     [last-seen] 28/30 UPM20_fault_fcn seed0: regret=0.134 savedB=0.389 prune=7/12
+     [last-seen] 29/30 UPM20_fault_fcn seed1: regret=0.016 savedB=0.728 prune=9/12
+     [last-seen] 30/30 UPM20_fault_fcn seed2: regret=0.016 savedB=0.743 prune=9/12
+  done last-seen
+     [arima] 1/30 HSF15_cooler_fcn seed0: regret=0.010 savedB=0.565 prune=9/12
+     [arima] 2/30 HSF15_cooler_fcn seed1: regret=0.015 savedB=0.606 prune=9/12
+     [arima] 3/30 HSF15_cooler_fcn seed2: regret=0.057 savedB=0.523 prune=9/12
+     [arima] 4/30 MOSFET11_rul_fcn seed0: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 5/30 MOSFET11_rul_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 6/30 MOSFET11_rul_fcn seed2: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 7/30 MPM20_fault_fcn seed0: regret=0.138 savedB=0.581 prune=7/12
+     [arima] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.441 prune=9/12
+     [arima] 9/30 MPM20_fault_fcn seed2: regret=0.112 savedB=0.415 prune=5/12
+     [arima] 10/30 OBDD17_rul_fcn seed0: regret=0.019 savedB=0.620 prune=9/12
+     [arima] 11/30 OBDD17_rul_fcn seed1: regret=0.024 savedB=0.596 prune=9/12
+     [arima] 12/30 OBDD17_rul_fcn seed2: regret=0.068 savedB=0.770 prune=9/12
+     [arima] 13/30 PHM18_fault_fcn seed0: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 15/30 PHM18_fault_fcn seed2: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.502 prune=7/12
+     [arima] 17/30 PHMAP23_fault_fcn seed1: regret=0.000 savedB=0.000 prune=0/12
+     [arima] 18/30 PHMAP23_fault_fcn seed2: regret=0.000 savedB=0.306 prune=4/12
+     [arima] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.676 prune=9/12
+     [arima] 20/30 PHME20_rul_fcn seed1: regret=0.067 savedB=0.670 prune=9/12
+     [arima] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.691 prune=9/12
+     [arima] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.124 savedB=0.519 prune=8/12
+     [arima] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.463 prune=9/12
+     [arima] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.171 savedB=0.661 prune=9/12
+     [arima] 25/30 RRB23_rul_fcn seed0: regret=0.011 savedB=0.400 prune=5/12
+     [arima] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.463 prune=6/12
+     [arima] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.382 prune=6/12
+     [arima] 28/30 UPM20_fault_fcn seed0: regret=0.134 savedB=0.389 prune=7/12
+     [arima] 29/30 UPM20_fault_fcn seed1: regret=0.016 savedB=0.728 prune=9/12
+     [arima] 30/30 UPM20_fault_fcn seed2: regret=0.016 savedB=0.743 prune=9/12
+  done arima
+     [early-stopping] 1/30 HSF15_cooler_fcn seed0: regret=0.000 savedB=0.107 prune=7/12
+     [early-stopping] 2/30 HSF15_cooler_fcn seed1: regret=0.000 savedB=0.083 prune=7/12
+     [early-stopping] 3/30 HSF15_cooler_fcn seed2: regret=0.041 savedB=0.034 prune=7/12
+     [early-stopping] 4/30 MOSFET11_rul_fcn seed0: regret=0.044 savedB=0.229 prune=9/12
+     [early-stopping] 5/30 MOSFET11_rul_fcn seed1: regret=0.412 savedB=0.125 prune=9/12
+     [early-stopping] 6/30 MOSFET11_rul_fcn seed2: regret=0.143 savedB=0.108 prune=9/12
+     [early-stopping] 7/30 MPM20_fault_fcn seed0: regret=0.048 savedB=0.059 prune=8/12
+     [early-stopping] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.057 prune=9/12
+     [early-stopping] 9/30 MPM20_fault_fcn seed2: regret=0.420 savedB=0.086 prune=9/12
+     [early-stopping] 10/30 OBDD17_rul_fcn seed0: regret=0.019 savedB=0.026 prune=8/12
+     [early-stopping] 11/30 OBDD17_rul_fcn seed1: regret=0.024 savedB=0.068 prune=8/12
+     [early-stopping] 12/30 OBDD17_rul_fcn seed2: regret=0.026 savedB=0.048 prune=8/12
+     [early-stopping] 13/30 PHM18_fault_fcn seed0: regret=0.000 savedB=0.094 prune=7/12
+     [early-stopping] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.070 prune=7/12
+     [early-stopping] 15/30 PHM18_fault_fcn seed2: regret=0.191 savedB=0.133 prune=8/12
+     [early-stopping] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.285 prune=9/12
+     [early-stopping] 17/30 PHMAP23_fault_fcn seed1: regret=0.214 savedB=0.164 prune=9/12
+     [early-stopping] 18/30 PHMAP23_fault_fcn seed2: regret=0.521 savedB=0.294 prune=9/12
+     [early-stopping] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.040 prune=6/12
+     [early-stopping] 20/30 PHME20_rul_fcn seed1: regret=0.067 savedB=0.016 prune=6/12
+     [early-stopping] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.038 prune=7/12
+     [early-stopping] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.420 savedB=0.067 prune=9/12
+     [early-stopping] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.057 prune=9/12
+     [early-stopping] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.171 savedB=0.073 prune=9/12
+     [early-stopping] 25/30 RRB23_rul_fcn seed0: regret=0.301 savedB=0.065 prune=9/12
+     [early-stopping] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.058 prune=9/12
+     [early-stopping] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.057 prune=9/12
+     [early-stopping] 28/30 UPM20_fault_fcn seed0: regret=0.631 savedB=0.065 prune=8/12
+     [early-stopping] 29/30 UPM20_fault_fcn seed1: regret=0.016 savedB=0.173 prune=8/12
+     [early-stopping] 30/30 UPM20_fault_fcn seed2: regret=0.016 savedB=0.232 prune=8/12
+  done early-stopping
+     [oracle] 1/30 HSF15_cooler_fcn seed0: regret=0.000 savedB=0.549 prune=8/12
+     [oracle] 2/30 HSF15_cooler_fcn seed1: regret=0.000 savedB=0.508 prune=8/12
+     [oracle] 3/30 HSF15_cooler_fcn seed2: regret=0.000 savedB=0.364 prune=7/12
+     [oracle] 4/30 MOSFET11_rul_fcn seed0: regret=0.000 savedB=0.401 prune=7/12
+     [oracle] 5/30 MOSFET11_rul_fcn seed1: regret=0.000 savedB=0.468 prune=7/12
+     [oracle] 6/30 MOSFET11_rul_fcn seed2: regret=0.000 savedB=0.388 prune=8/12
+     [oracle] 7/30 MPM20_fault_fcn seed0: regret=0.000 savedB=0.208 prune=6/12
+     [oracle] 8/30 MPM20_fault_fcn seed1: regret=0.000 savedB=0.441 prune=9/12
+     [oracle] 9/30 MPM20_fault_fcn seed2: regret=0.000 savedB=0.273 prune=4/12
+     [oracle] 10/30 OBDD17_rul_fcn seed0: regret=0.000 savedB=0.508 prune=7/12
+     [oracle] 11/30 OBDD17_rul_fcn seed1: regret=0.000 savedB=0.491 prune=8/12
+     [oracle] 12/30 OBDD17_rul_fcn seed2: regret=0.000 savedB=0.538 prune=7/12
+     [oracle] 13/30 PHM18_fault_fcn seed0: regret=0.000 savedB=0.395 prune=6/12
+     [oracle] 14/30 PHM18_fault_fcn seed1: regret=0.000 savedB=0.541 prune=9/12
+     [oracle] 15/30 PHM18_fault_fcn seed2: regret=0.000 savedB=0.350 prune=7/12
+     [oracle] 16/30 PHMAP23_fault_fcn seed0: regret=0.000 savedB=0.576 prune=9/12
+     [oracle] 17/30 PHMAP23_fault_fcn seed1: regret=0.000 savedB=0.410 prune=8/12
+     [oracle] 18/30 PHMAP23_fault_fcn seed2: regret=0.000 savedB=0.615 prune=8/12
+     [oracle] 19/30 PHME20_rul_fcn seed0: regret=0.000 savedB=0.676 prune=9/12
+     [oracle] 20/30 PHME20_rul_fcn seed1: regret=0.000 savedB=0.620 prune=8/12
+     [oracle] 21/30 PHME20_rul_fcn seed2: regret=0.000 savedB=0.675 prune=8/12
+     [oracle] 22/30 PRONOSTIA_rul_fcn seed0: regret=0.000 savedB=0.331 prune=5/12
+     [oracle] 23/30 PRONOSTIA_rul_fcn seed1: regret=0.000 savedB=0.466 prune=9/12
+     [oracle] 24/30 PRONOSTIA_rul_fcn seed2: regret=0.000 savedB=0.630 prune=8/12
+     [oracle] 25/30 RRB23_rul_fcn seed0: regret=0.000 savedB=0.394 prune=6/12
+     [oracle] 26/30 RRB23_rul_fcn seed1: regret=0.000 savedB=0.616 prune=9/12
+     [oracle] 27/30 RRB23_rul_fcn seed2: regret=0.000 savedB=0.535 prune=9/12
+     [oracle] 28/30 UPM20_fault_fcn seed0: regret=0.000 savedB=0.289 prune=7/12
+     [oracle] 29/30 UPM20_fault_fcn seed1: regret=0.000 savedB=0.600 prune=8/12
+     [oracle] 30/30 UPM20_fault_fcn seed2: regret=0.000 savedB=0.445 prune=8/12
+  done oracle
+C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+  warnings.warn("Exact p-value calculation does not work if there are "
+C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+  warnings.warn("Exact p-value calculation does not work if there are "
+C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+  warnings.warn("Exact p-value calculation does not work if there are "
+C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+  warnings.warn("Exact p-value calculation does not work if there are "
+C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\scipy\stats\_morestats.py:3414: UserWarning: Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+  warnings.warn("Exact p-value calculation does not work if there are "
+
+=== prompt-variant comparison ===
+                        policy  n  regret_mean  regret_ci95  saved_pct_A_mean  saved_pct_B_mean  false_prune_rate  false_continue_rate  found_best_rate  prune_rate
+                         arima 30     0.032704     0.018338          0.423701          0.423701          0.089560             0.440123         0.466667    0.502778
+                early-stopping 30     0.124178     0.065295          0.100216          0.100216          0.027267             0.634034         0.333333    0.677778
+                     last-seen 30     0.012419     0.012275          0.408068          0.408068          0.048548             0.440267         0.700000    0.491667
+llm:conservative:gemma3:27b:L2 30     0.109152     0.063100          0.384141          0.379898          0.100126             0.252419         0.400000    0.577778
+                        oracle 30     0.000000     0.000000          0.476784          0.476784          0.113811             0.142583         1.000000    0.630556
+                        random 30     0.076633     0.050086          0.317688          0.317688          0.031627             0.650228         0.400000    0.386111
+
+results in results\runs\conservative_broad_exp2_g27b/ (compare_*.csv, prompts/, raw/compare_decisions.csv)

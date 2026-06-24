@@ -1,0 +1,120 @@
+[07:48:21] loading data (debug=False)...
+[phmlc_bridge] phm_framework import failed (ImportError: Traceback (most recent call last):
+  File "C:\Users\Cristian\Documents\Obsidian Vault\Master\TFM\llm_es\.venv\lib\site-packages\tensorflow\python\pywrap_tensorflow.py", line 70, in <module>
+    from tensorflow.python._pywrap_tensorflow_internal import *
+ImportError: DLL load failed while importing _pywrap_tensorflow_internal: Error en una rutina de inicialización de biblioteca de vínculos dinámicos (DLL).
+
+
+Failed to load the native TensorFlow runtime.
+See https://www.tensorflow.org/install/errors for some common causes and solutions.
+If you need help, create an issue at https://github.com/tensorflow/tensorflow/issues and include the entire stack trace above this error message.); using phmd-only load_curves replica.
+Remember to cite the original publisher dataset:
+	@article{solis2025model,
+	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
+	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
+	  journal={Mathematics},
+	  volume={13},
+	  number={4},
+	  pages={555},
+	  year={2025},
+	  publisher={Multidisciplinary Digital Publishing Institute}
+	}
+	
+You can download the dataset manually from:  
+
+** If you find this tool useful, please cite our SoftwareX paper: 
+	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
+
+INFO:root:Read in 1.0460562705993652 seconds
+Remember to cite the original publisher dataset:
+	@article{solis2025model,
+	  title={A Model for Learning-Curve Estimation in Efficient Neural Architecture Search and Its Application in Predictive Health Maintenance},
+	  author={Sol{\'\i}s-Mart{\'\i}n, David and Gal{\'a}n-P{\'a}ez, Juan and Borrego-D{\'\i}az, Joaqu{\'\i}n},
+	  journal={Mathematics},
+	  volume={13},
+	  number={4},
+	  pages={555},
+	  year={2025},
+	  publisher={Multidisciplinary Digital Publishing Institute}
+	}
+	
+You can download the dataset manually from:  
+
+** If you find this tool useful, please cite our SoftwareX paper: 
+	Solís-Martín, David, Juan Galán-Páez, and Joaquín Borrego-Díaz. "PHMD: An easy data access tool for prognosis and health management datasets." SoftwareX 29 (2025): 102039.
+
+Reading dataset:   0%|          | 0/241 [00:00<?, ?it/s]Reading data:   0%|          | 0/241 [00:00<?, ?it/s]   Reading data:   2%|2         | 6/241 [00:00<00:04, 55.17it/s]Reading data:   6%|6         | 15/241 [00:00<00:03, 69.08it/s]Reading data:   9%|9         | 22/241 [00:00<00:03, 66.80it/s]Reading data:  12%|#2        | 29/241 [00:00<00:03, 65.99it/s]Reading data:  15%|#4        | 36/241 [00:00<00:03, 62.09it/s]Reading data:  18%|#7        | 43/241 [00:00<00:03, 62.82it/s]Reading data:  21%|##        | 50/241 [00:00<00:03, 63.19it/s]Reading data:  24%|##4       | 58/241 [00:00<00:02, 66.86it/s]Reading data:  27%|##6       | 65/241 [00:01<00:02, 63.17it/s]Reading data:  30%|##9       | 72/241 [00:01<00:02, 63.41it/s]Reading data:  33%|###2      | 79/241 [00:01<00:02, 63.59it/s]Reading data:  36%|###5      | 86/241 [00:01<00:02, 65.00it/s]Reading data:  39%|###9      | 95/241 [00:01<00:02, 69.45it/s]Reading data:  42%|####2     | 102/241 [00:01<00:02, 67.81it/s]Reading data:  45%|####5     | 109/241 [00:01<00:01, 66.67it/s]Reading data:  48%|####8     | 116/241 [00:01<00:01, 65.87it/s]Reading data:  51%|#####1    | 123/241 [00:01<00:01, 65.41it/s]Reading data:  54%|#####3    | 130/241 [00:02<00:01, 64.39it/s]Reading data:  57%|#####7    | 138/241 [00:02<00:01, 67.00it/s]Reading data:  61%|######    | 147/241 [00:02<00:01, 71.68it/s]Reading data:  64%|######4   | 155/241 [00:02<00:01, 71.02it/s]Reading data:  68%|######7   | 163/241 [00:02<00:01, 71.81it/s]Reading data:  71%|#######   | 171/241 [00:02<00:00, 72.21it/s]Reading data:  75%|#######5  | 181/241 [00:02<00:00, 78.01it/s]Reading data:  78%|#######8  | 189/241 [00:02<00:00, 73.42it/s]Reading data:  82%|########1 | 197/241 [00:02<00:00, 72.93it/s]Reading data:  86%|########5 | 207/241 [00:03<00:00, 78.34it/s]Reading data:  89%|########9 | 215/241 [00:03<00:00, 76.81it/s]Reading data:  93%|#########2| 223/241 [00:03<00:00, 75.72it/s]Reading data:  97%|#########6| 233/241 [00:03<00:00, 78.51it/s]Reading data: 100%|##########| 241/241 [00:03<00:00, 62.08it/s]
+INFO:root:Read in 7.753185987472534 seconds
+[07:53:17] loaded 4 experiment(s): ['HSF15_cooler_fcn', 'HSF15_cooler_mscnn', 'HSF15_cooler_rnn', 'HSF15_cooler_transformer']
+
+===== [07:53:17] EXP1: model + context-level selection =====
+  [ok]   llama3.1:8b (probe 6.7s)
+     done llm:llama3.1:8b:L0
+     done llm:llama3.1:8b:L1
+     done llm:llama3.1:8b:L2
+     done llm:llama3.1:8b:L3
+  [ok]   gemma3:12b (probe 7.1s)
+     done llm:gemma3:12b:L0
+     done llm:gemma3:12b:L1
+     done llm:gemma3:12b:L2
+     done llm:gemma3:12b:L3
+  [ok]   gemma3:27b (probe 9.5s)
+     done llm:gemma3:27b:L0
+     done llm:gemma3:27b:L1
+     done llm:gemma3:27b:L2
+     done llm:gemma3:27b:L3
+  [ok]   gemma4:31b (probe 17.4s)
+     done llm:gemma4:31b:L0
+     done llm:gemma4:31b:L1
+     done llm:gemma4:31b:L2
+     done llm:gemma4:31b:L3
+  [ok]   gpt-oss:20b (probe 7.6s)
+     done llm:gpt-oss:20b:L0
+     done llm:gpt-oss:20b:L1
+     done llm:gpt-oss:20b:L2
+     done llm:gpt-oss:20b:L3
+  [ok]   gpt-oss:120b (probe 28.7s)
+     done llm:gpt-oss:120b:L0
+     done llm:gpt-oss:120b:L1
+     done llm:gpt-oss:120b:L2
+     done llm:gpt-oss:120b:L3
+  [ok]   llama3.3:70b (probe 22.3s)
+     done llm:llama3.3:70b:L0
+     done llm:llama3.3:70b:L1
+     done llm:llama3.3:70b:L2
+     done llm:llama3.3:70b:L3
+  [skip] qwen3.6:latest: HTTPError: 400 Client Error: Bad Request for url: https://llamus.cs.us.es/ollama/api/chat
+[exp1] 10:51:33 working=['llama3.1:8b', 'gemma3:12b', 'gemma3:27b', 'gemma4:31b', 'gpt-oss:20b', 'gpt-oss:120b', 'llama3.3:70b'] skipped=['qwen3.6:latest'] (10695s)
+[exp1] dumped 1848 decisions -> results\raw\exp1_decisions.csv
+             policy     score  regret_mean  saved_pct_B_mean  false_prune_rate  false_continue_rate  mean_confidence
+llm:gpt-oss:120b:L3  0.123852      0.00000          0.221701          0.200000             0.000000              1.0
+  llm:gemma4:31b:L2  0.090523      0.00000          0.215657          0.133333             0.000000              1.0
+  llm:gemma4:31b:L3  0.088134      0.00000          0.215224          0.066667             0.000000              1.0
+  llm:gemma3:12b:L2  0.000000      0.01034          0.380564          0.333333             0.000000              1.0
+  llm:gemma3:12b:L3 -0.000340      0.01034          0.380502          0.333333             0.000000              1.0
+  llm:gemma3:27b:L2 -0.001648      0.01034          0.380265          0.333333             0.000000              1.0
+  llm:gemma3:27b:L3 -0.002608      0.01034          0.380091          0.333333             0.000000              1.0
+llm:llama3.3:70b:L2 -0.004267      0.01034          0.379790          0.333333             0.000000              1.0
+llm:llama3.3:70b:L3 -0.005985      0.01034          0.379479          0.333333             0.000000              1.0
+ llm:gpt-oss:20b:L3 -0.012000      0.01034          0.378388          0.333333             0.000000              1.0
+ llm:gpt-oss:20b:L2 -0.015376      0.01034          0.377776          0.333333             0.000000              1.0
+llm:llama3.3:70b:L0 -0.296493      0.01034          0.326804          0.111111             0.666667              1.0
+  llm:gemma3:12b:L1 -0.353608      0.01034          0.316448          0.095238             0.619048              1.0
+llm:gpt-oss:120b:L2 -0.397731      0.01034          0.308447          0.300000             0.000000              1.0
+  llm:gemma3:27b:L0 -0.488621      0.01034          0.291967          0.076923             0.769231              1.0
+ llm:llama3.1:8b:L1 -0.515221      0.01034          0.287144          0.074074             0.777778              1.0
+ llm:gpt-oss:20b:L0 -0.720694      0.01034          0.249888          0.130435             0.521739              1.0
+  llm:gemma3:12b:L0 -0.740799      0.01034          0.246242          0.080000             0.600000              1.0
+llm:llama3.3:70b:L1 -0.745083      0.01034          0.245465          0.080000             0.520000              1.0
+llm:gpt-oss:120b:L0 -0.745239      0.01034          0.245437          0.080000             0.480000              1.0
+  llm:gemma4:31b:L0 -0.801530      0.01034          0.235230          0.080000             0.520000              1.0
+  llm:gemma3:27b:L1 -0.808501      0.01034          0.233966          0.066667             0.700000              1.0
+  llm:gemma4:31b:L1 -0.818971      0.01034          0.232068          0.120000             0.520000              1.0
+ llm:llama3.1:8b:L0 -0.851774      0.01034          0.226120          0.068966             0.620690              1.0
+ llm:llama3.1:8b:L3 -0.852131      0.01034          0.226055          0.068966             0.517241              1.0
+llm:gpt-oss:120b:L1 -0.861604      0.01034          0.224338          0.068966             0.482759              1.0
+ llm:gpt-oss:20b:L1 -0.943993      0.01034          0.209399          0.148148             0.407407              1.0
+ llm:llama3.1:8b:L2 -1.000000      0.01034          0.199244          0.137931             0.448276              1.0
+[exp1] BEST -> llm:gpt-oss:120b:L3 (model=gpt-oss:120b, level=L3)
+
+===== [10:51:33] EXP2: best LLM vs baselines + oracle =====

@@ -1,0 +1,17 @@
+{
+  "policy": "llm:neutral:llama3.3:70b:L2",
+  "model": "llama3.3:70b",
+  "context_level": 2,
+  "working": [
+    "llama3.1:8b",
+    "gemma3:12b",
+    "gemma3:27b",
+    "gemma4:31b",
+    "gpt-oss:20b",
+    "gpt-oss:120b",
+    "llama3.3:70b"
+  ],
+  "failed": [
+    "qwen3.6:latest"
+  ]
+}

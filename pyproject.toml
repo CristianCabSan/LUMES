@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LUMES"
+version = "0.1.0"
+description = "LLM judge for early stopping in Bayesian optimization over pre-computed learning curves (TFM)"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+authors = [{ name = "Cristian Caballero Sánchez" }]
+dependencies = [
+    "phmd==2025.0.4",
+    "requests",
+    "optuna",
+    "pandas==2.0.3",
+    "numpy",
+    "statsmodels==0.14.1",
+    "scikit-learn==1.3.2",
+    "matplotlib",
+    "python-dotenv",
+]
+
+# NOTE: `tensorflow==2.18.*` is an *implicit* runtime requirement only when the
+# real `phm_framework` curves loader is used (importing the package pulls in TF).
+# It is intentionally NOT a hard dependency here so the package, its unit tests
+# and the offline (synthetic) end-to-end path install/run without TensorFlow.
+# Install it explicitly in the execution environment:  pip install "tensorflow==2.18.*"
+[project.optional-dependencies]
+phmlc = ["tensorflow==2.18.*"]
+dev = ["pytest"]
+
+# Flat src-layout: individual top-level modules (no `LUMES` package wrapper) plus
+# the `policies` subpackage. List the loose modules explicitly since
+# setuptools.packages.find only auto-discovers directories with __init__.py.
+[tool.setuptools]
+package-dir = { "" = "src" }
+py-modules = [
+    "backend", "config", "dataset", "metrics", "phmlc_bridge",
+    "prompting", "runner", "scenario", "simulator", "tracking",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["policies*"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+pythonpath = ["src"]

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+*.egg-info/
+
+# results: keep summaries + figures, ignore bulky raw per-decision dumps
+results/*.log
+results/raw/
+results/_*.csv
