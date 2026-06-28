@@ -33,7 +33,7 @@ def load_experiments(cfg: ExperimentConfig) -> List[ExperimentData]:
         n = cfg.n_experiments or 1
         return make_synthetic_experiments(n_experiments=n, seed=cfg.random_state)
 
-    from . import phmlc_bridge  # lazy: pulls TensorFlow
+    import phmlc_bridge  # lazy: pulls TensorFlow
     sets = phmlc_bridge.load_experiment_curves(
         fold=cfg.fold, num_folds=cfg.num_folds, filters=cfg.filters,
         test_dataset_names=cfg.test_dataset_names, random_state=cfg.random_state,
