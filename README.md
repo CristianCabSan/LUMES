@@ -6,10 +6,6 @@ through the read-only `phmlc` framework). Epoch by epoch the judge decides
 `CONTINUE` / `PRUNE` using **only past/present** information, and is compared
 against three baselines (`random`, `last-seen`, `arima`) and an `oracle`.
 
-> Sibling repos: `../phmlc` (framework, **READ-ONLY**) and this repo `LUMES`
-> (all new code). The single boundary with `phmlc` is
-> [src/phmlc_bridge.py](src/phmlc_bridge.py).
-
 ## 1. Install
 
 ```bash
@@ -122,7 +118,7 @@ python src/experiments/plots.py --input results/exp3_determinism.csv --outdir re
 * **Confidence** (agreement across samples) and **tokens / latency**.
 
 ## 5. Architecture
-See [docs/PLAN.md](docs/PLAN.md). Flat `src/`-layout (no package wrapper, only
+Flat `src/`-layout (no package wrapper, only
 `policies/` is a real subpackage): `phmlc_bridge` (only phmlc boundary) · `config` ·
 `backend` (+`MockBackend`) · `tracking` · `scenario` (no-leak bundle + builder) ·
 `prompting` (L0–L3 + parser) · `policies/` (`llm`, `random`, `last_seen`, `arima`,
@@ -135,3 +131,8 @@ Models limited to those served by Ollamus; times are relative to hardware + netw
 latency; not all combinations are run (time budget); the per-epoch pruning ground
 truth uses phmlc's `×1.05` heuristic; the ARIMA grid is bounded (phmlc's full grid
 is intractable per-epoch) and its order is selected once per run then reused.
+
+
+## Disclaimer
+This README may not reflect the latest implementation details or be fully up to date. 
+Its purpose is to provide a high-level overview of the repository along with a brief guide to help get started.
